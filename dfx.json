@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "shop_app_backend": {
+      "main": "src/shop_app_backend/main.mo",
+      "type": "motoko"
+    },
+    "shop_app_frontend": {
+      "dependencies": [
+        "shop_app_backend"
+      ],
+      "source": [
+        "src/shop_app_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "shop_app_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
